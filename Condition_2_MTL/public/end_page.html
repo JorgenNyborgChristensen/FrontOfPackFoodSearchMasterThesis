@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Christoph Trattner" />
+
+    <title>Movie Survey</title>
+    <!-- page title -->
+
+    <link href="./end_page_files/bootstrap.min.css" rel="stylesheet" />
+    <link href="./end_page_files/bootstrap-grid.css" rel="stylesheet" />
+
+    <link href="./end_page_files/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="./end_page_files/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./end_page_files/tether.min.js"></script>
+    <script src="./end_page_files/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Page Content -->
+
+    <div class="container">
+      <div class="jumbotron">
+        <div align="center">
+          <script>
+            function myFunction() {
+              /* Get the text field */
+              var copyText = document.getElementById("myInput");
+
+              /* Select the text field */
+              copyText.select();
+
+              /* Copy the text inside the text field */
+              document.execCommand("copy");
+
+              /* Alert the copied text */
+              alert("Copied the text: " + copyText.value);
+            }
+            window.addEventListener("load", (event) => {
+              var id = JSON.parse(sessionStorage.getItem("user_id").toString());
+              document.getElementById("myInput").value = id;
+            });
+          </script>
+
+          <h2>Thank you very much for taking part in this survey :)</h2>
+          <br />
+          <p class="lead">
+            Please, copy &amp; paste the code below to Amazon Mechanical Turk in
+            order to obtain your payment for this HIT!
+
+            <!-- The text field -->
+          </p>
+          <div class="col-8">
+            <input
+              type="text"
+              class="form-control"
+              value=""
+              id="myInput"
+            /><button
+              type="submit"
+              class="btn btn-primary mb-2"
+              onclick="myFunction()"
+            >
+              Copy!
+            </button>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

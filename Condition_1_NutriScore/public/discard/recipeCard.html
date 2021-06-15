@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: #e1e1e1;
+        font-family: "mr-eaves-xl-modern", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #8d8d8d;
+        letter-spacing: 0.04em;
+      }
+      /* apply a natural box layout model to all elements, but allowing components to change */
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      /* Scrollbar Styling */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #ebebeb;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #6d6d6d;
+      }
+      .Aligner {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .recipe-card {
+        position: relative;
+        background: #fff;
+        width: 770px;
+        height: 475px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+      .recipe-card__favourite {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 25px;
+        height: 20px;
+      }
+      .recipe-card__image {
+        background: url("https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg")
+          no-repeat;
+        min-width: 356px;
+      }
+      .recipe-card__content {
+        flex-grow: 1;
+        padding: 60px 50px;
+      }
+      .recipe-card__content-section-title {
+        font-family: "mr-eaves-xl-modern", sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: #8d8d8d;
+        letter-spacing: 5px;
+        font-size: 16px;
+      }
+      .recipe-card__content-recipe-title {
+        margin: 25px 0 20px;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 200;
+        color: #3b3b3b;
+        -webkit-font-smoothing: subpixel-antialiased;
+      }
+      .recipe-card__content-recipe-title span {
+        font-family: "fanwood", sans-serif;
+        font-style: italic;
+        -webkit-font-smoothing: antialiased;
+      }
+      .recipe-card-stats {
+        display: flex;
+        margin-top: 20px;
+      }
+      .recipe-card-stats__item {
+        padding-right: 20px;
+        margin-right: 20px;
+        border-right: 1px solid #e1e1e1;
+      }
+      .recipe-card-stats__item:last-child {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+      .recipe-card-stats__item h2 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #3b3b3b;
+      }
+      .recipe-card-stats__item p {
+        font-size: 16px;
+        margin-bottom: 0 !important;
+      }
+      .recipe-card-rating {
+        display: flex;
+        margin-top: 30px;
+      }
+      .recipe-card-rating__item {
+        margin-right: 4px;
+      }
+      .recipe-card-rating__item:last-child {
+        margin-left: 6px;
+        font-size: 16px;
+      }
+      .recipe-card-rating .star-icon {
+        fill: #e1e1e1;
+      }
+      .recipe-card-rating .star-icon--active {
+        fill: #ffd45f;
+      }
+      .recipe-card-actions {
+        margin-top: 40px;
+      }
+      .recipe-card-actions .inline-link {
+        margin-left: 20px;
+      }
+      .inline-link {
+        color: #bbb;
+        font-weight: 300;
+        text-decoration: none;
+      }
+      .button {
+        padding: 15px 22px;
+        text-align: center;
+        background: #e1e1e1;
+        display: inline-block;
+        border-radius: 99px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+      .button--primary {
+        background: #5bd982;
+      }
+      .button--primary:hover {
+        background: #2cbc58;
+      }
+      .recipe-flip-back {
+        position: absolute;
+        top: 27px;
+        left: 32px;
+        width: 30px;
+        cursor: pointer;
+      }
+      .recipe-flip-back:hover .icon--arrow-back {
+        fill: #cac1b5;
+      }
+      .recipe-flip-back .icon--arrow-back {
+        fill: #dfdad3;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+      .recipe-details {
+        display: flex;
+        flex-direction: row;
+        width: 770px;
+        height: 475px;
+      }
+      .recipe-details__summary {
+        max-width: 400px;
+        padding: 0 0 0px 90px;
+        height: calc(100% - 60px);
+        overflow-y: scroll;
+        margin: 30px 0 60px;
+        padding-right: 20px;
+      }
+      .recipe-details__summary > h2 {
+        margin: 0 0 20px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 300;
+        color: #3b3b3b;
+        -webkit-font-smoothing: subpixel-antialiased;
+        line-height: 25px;
+      }
+      .recipe-details__summary h3 {
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 300;
+        color: #3b3b3b;
+        -webkit-font-smoothing: subpixel-antialiased;
+        line-height: 25px;
+      }
+      .recipe-details__summary p {
+        margin-bottom: 30px;
+        line-height: 24px;
+      }
+      .recipe-details__content {
+        flex-grow: 1;
+        padding: 30px 50px;
+      }
+      .recipe-details__content h2 {
+        margin: 0 0 20px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 300;
+        color: #3b3b3b;
+        -webkit-font-smoothing: subpixel-antialiased;
+        line-height: 25px;
+      }
+      .recipe-details__content li {
+        margin-bottom: 10px;
+        line-height: 25px;
+      }
+      .flip {
+        perspective: 800;
+        width: 770px;
+        height: 475px;
+        position: relative;
+      }
+      .flip .card.flipped {
+        transform: rotateY(-180deg);
+      }
+      .flip .card {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .flip .card .face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        z-index: 2;
+      }
+      .flip .card .front {
+        position: absolute;
+        z-index: 1;
+      }
+      .flip .card .back {
+        transform: rotateY(-180deg);
+        background: #fff;
+      }
+    </style>
+    <div class="Aligner">
+      <div class="flip">
+        <div class="card">
+          <div class="face front">
+            <div class="recipe-card">
+              <a class="recipe-card__favourite" href=""></a>
+              <div class="recipe-card__image"></div>
+
+              <div class="recipe-card__content">
+                <h1 class="recipe-card__content-recipe-title">
+                  strawberry <span>&amp;</span> pistachio pavlova
+                </h1>
+                <p>With Mascarpone Cream, Fresh Mint</p>
+                <ul class="recipe-card-stats">
+                  <li class="recipe-card-stats__item">
+                    <h2>40</h2>
+                    <p>Mins</p>
+                  </li>
+                  <li class="recipe-card-stats__item">
+                    <h2>225</h2>
+                    <p>Nutrition</p>
+                  </li>
+                  <li class="recipe-card-stats__item">
+                    <h2>4</h2>
+                    <p>Ingredients</p>
+                  </li>
+                </ul>
+
+                <ul class="recipe-card-rating">
+                  <li class="recipe-card-rating__item"></li>
+                  <li class="recipe-card-rating__item"></li>
+                  <li class="recipe-card-rating__item"></li>
+                  <li class="recipe-card-rating__item"></li>
+                  <li class="recipe-card-rating__item"></li>
+                  <li class="recipe-card-rating__item">29</li>
+                </ul>
+
+                <div class="recipe-card-actions">
+                  <a class="js-button--recipe button button--primary"
+                    >View Recipe</a
+                  >
+                  <a href="" class="inline-link"> Add to collection</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="face back">
+            <a href="" class="recipe-flip-back"> </a>
+
+            <div class="recipe-details">
+              <div class="recipe-details__summary">
+                <h2>Method</h2>
+                <p>
+                  1. Preheat oven to 160C/140C fan/gas mark 3. Line a baking
+                  sheet with parchment paper. Set aside. Put the egg whites in a
+                  large, clean bowl and whisk to soft, shiny peaks ensure the
+                  whites don't go grainy. Gradually add the caster sugar in
+                  heaped tablespoons, whisking well after each addition to make
+                  sure all of the sugar is fully incorporated. Add the cornflour
+                  and vinegar. Continue to whisk until the whites are really
+                  stiff, very shiny and stand up in peaks when you lift your
+                  beaters out. Use a large metal spoon to gently fold in the
+                  white chocolate and most of the pistachio nuts, reserving a
+                  handful to serve. Spoon six saucer-sized dollops on to the
+                  parchment paper and use a spoon to make a dip in the centre of
+                  each.
+                </p>
+
+                <p>
+                  2. Reduce the oven temperature to 140C/120C fan/gas 1. Cook
+                  the meringue for 45 minutes. Switch off the oven, open the
+                  door slightly then allow the meringue to cool completely in
+                  the oven.
+                </p>
+
+                <p>
+                  3. Meanwhile, mash 4 strawberries and the icing sugar with a
+                  fork until juicy and broken down. Fold in the crème fraîche to
+                  the whipped cream, then swirl through the crushed
+                  strawberries. To serve, pile the strawberry cream mix on to
+                  the pavlovas and top with the sliced strawberries. scatter
+                  with the remaining chopped pistachios.
+                </p>
+              </div>
+              <div class="recipe-details__content">
+                <h2>Ingredients</h2>
+                <ul>
+                  <li>3 large eggs, white only, see tip</li>
+                  <li>150 g caster sugar</li>
+                  <li>1 tsp white wine vinegar</li>
+                  <li>100 g white chocolate, roughly chopped</li>
+                  <li>75 g pistachio nuts, roughly chopped</li>
+                  <li>300 g strawberries</li>
+                  <li>1 tbsp icing sugar</li>
+                  <li>200 ml double cream, whipped</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $("document").ready(function () {
+        $(".js-button--recipe, .recipe-flip-back").click(function (e) {
+          $(".card").toggleClass("flipped");
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EC1VVG8619"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EC1VVG8619");
+    </script>
+    <title>Thank you!</title>
+
+    <link rel="stylesheet" href="./style/style.css?" />
+    <!-- Your platform (jquery) scripts. -->
+
+    <link
+      href="https://unpkg.com/survey-jquery@1.8.23/modern.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/survey-jquery@1.8.23/survey.jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="thanks-container">
+      <div class="thank-you">
+        <h1>Thank you for your participation!</h1>
+        <p>
+          Press the button below to confirm that you have completed the study.
+          You will be redirected back to Prolific.
+        </p>
+        <button
+          class="sv-btn"
+          type="button"
+          onclick="location.href='https://app.prolific.co/submissions/complete?cc=866C1F68'"
+        >
+          Complete study
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

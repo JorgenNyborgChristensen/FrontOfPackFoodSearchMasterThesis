@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Search Study</title>
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/recipeCardLabel.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="search_bar">
+        <!-- Description of user task -->
+        <div class="task_description">
+          <h1>Recipe Search Study</h1>
+          <p>
+            Use the search bar below to search for a recipe. If you do so, ten
+            recipes will appear. Please inspect them carefully and click
+            <strong>'Select Recipe'</strong> button on the recipe that you like
+            the most. Afterwards we will ask you a few questions about the
+            chosen recipe and the list of search results.
+          </p>
+          <p>
+            Please use the search bar below to type in the following search
+            term: <strong><span id="queryTerm"></span></strong>. It is important
+            that you use
+            <strong>exactly</strong>
+            this search term.
+          </p>
+
+          <p>
+            Please click the <strong>'Select Recipe'</strong> button on the
+            recipe that you like the most and would like to cook at home. You
+            can press the 'View More' button to view the cooking instructions
+            and ingredients.
+          </p>
+        </div>
+        <!-- The search bar-->
+        <form class="search">
+          <input
+            type="search"
+            placeholder="Search for recipe"
+            name="search"
+            id="searchKeyword"
+          />
+          <button type="button" id="searchButton" )>
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </header>
+
+      <!-- Recipe list-->
+      <div id="recipe_list"></div>
+
+      <footer>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination" id="paging"></ul>
+        </nav>
+      </footer>
+    </div>
+
+    <!--<script src="script.js"></script>-->
+    <script src="variant_2.js"></script>
+  </body>
+</html>

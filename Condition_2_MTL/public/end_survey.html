@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9JD7BK607V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9JD7BK607V');
+</script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link href="https://unpkg.com/survey-jquery@1.8.23/modern.css" type="text/css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/survey-jquery@1.8.23/survey.jquery.min.js"></script>
+    <title>Questionnaire</title>
+  </head>
+  <body>
+    <div id="wrap">
+      
+      <div class="form-container">
+        <header id="choice-survey-header">
+          <h1>Recipe Search Study</h1>
+        </header>
+       
+        <form
+          id="end-survey"
+          name="end-survey"
+          action="https://recipe-search-2.herokuapp.com/endsurvey"
+          onsubmit="return validateForm()"
+          method="POST"
+        >
+          <input type="hidden" id="user_id" name="user_id" value="" />
+          <input type="hidden" id="condition" name="condition" value="2" />
+          <input type="hidden" id="submitted_at" name="submitted_at" value="" />
+
+          <h2 class="sv-title">Post questionnaire about label information:</h2>
+
+          <label class="statement"
+            >1. It was easy to judge the healthiness of the recipes </label
+          >
+          <ul class="likert">
+            <li>
+              <input type="radio" name="label_q1" value="-2" required />
+              <label>Strongly disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="label_q1" value="-1" />
+              <label>Disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="label_q1" value="0" />
+              <label>Neither disagree/agree</label>
+            </li>
+            <li>
+              <input type="radio" name="label_q1" value="1" />
+              <label>Agree</label>
+            </li>
+            <li>
+              <input type="radio" name="label_q1" value="2" />
+              <label>Strongly agree</label>
+            </li>
+          </ul>
+          <label class="statement"
+            >2. The information provided was sufficient for me to make a decision
+          </label>
+          <ul class="likert">
+            <li>
+              <input type="radio" name="label_q2" value="-2" required />
+              <label>Strongly disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="label_q2" value="-1" />
+              <label>Disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="label_q2" value="0" />
+              <label>Neither disagree/agree</label>
+            </li>
+            <li>
+              <input type="radio" name="label_q2" value="1" />
+              <label>Agree</label>
+            </li>
+            <li>
+              <input type="radio" name="label_q2" value="2" />
+              <label>Strongly agree</label>
+            </li>
+          </ul>
+
+          <div class="sv-question">
+            <label class="statement">3. Which factors influenced your recipe choices the most?</label>
+            <p><input class="w3-check" id="influence_id" type="checkbox" name="health" value="health" required>
+              <label>Healthiness</label></p>
+              <p><input class="w3-check" type="checkbox" name="ingredient" value="ingredient">
+                <label>A specific ingredient</label></p>
+            <p><input class="w3-check" type="checkbox" name="image" value="image">
+              <label>Attractive images</label></p>
+            <p><input class="w3-check" type="checkbox" name="rating" value="rating">
+              <label>High ratings</label></p>
+            <p><input class="w3-check" type="checkbox" name="numrating" value="numrating">
+              <label>Number of ratings</label></p>
+            <p><input class="w3-check" type="checkbox" name="cal" value="cal">
+              <label>Calories</label></p>
+              <p><input class="w3-check" type="checkbox" name="salt" value="salt">
+                <label>Low salt</label></p>
+                <p><input class="w3-check" type="checkbox" name="sugar" value="sugar">
+                  <label>Low sugar</label></p>
+                  <p><input class="w3-check" type="checkbox" name="fat" value="fat">
+                    <label>Low fat</label></p>
+                    <p><input class="w3-check" type="checkbox" name="protein" value="protein">
+                      <label>High protein</label></p>
+            <p><input class="w3-check" type="checkbox" name="title" value="title">
+              <label>The recipe title</label></p>
+              <p><input class="w3-check" type="checkbox" name="goals" value="goals">
+              <label>My health goals</label></p>
+            <label class="w3-text-black">Other, if any: </label>
+            <input class="sv-input" name="other_reason" type="text"></p>
+          </div>
+
+          <div class="buttons">
+            <button class="sv-btn confirm-choice-survey" onclick="validateForm()">Confirm</button>
+          </div>
+        </form>
+      </div>
+  </div>
+
+    <script>
+      // Set values from session storage
+      document.getElementById("user_id").value = sessionStorage.getItem(
+        "user_id"
+      );
+
+      // Get time now
+      var time = document.getElementById("submitted_at");
+      var now = new Date();
+      var timeNow = now.toISOString();
+      time.value = timeNow;
+
+      function validateForm() {
+          var valid = true;
+          
+          if (document["end-survey"].label_q1.value == "" )
+          {
+            alert ( "Please answer question 1" );
+            valid = false;
+          }
+          if (document["end-survey"].label_q2.value == "" )
+          {
+            alert ( "Please answer questions 2" );
+            valid = false;
+          }
+          if (( document["end-survey"].health.checked == false )  && ( document["end-survey"].ingredient.checked == false )  &&( document["end-survey"].image.checked == false )  &&( document["end-survey"].rating.checked == false )  &&( document["end-survey"].numrating.checked == false )  &&( document["end-survey"].cal.checked == false )  && ( document["end-survey"].title.checked == false ) && ( document["end-survey"].goals.checked == false ) && ( document["end-survey"].other_reason.value === ""))
+          {
+              alert ( "Please answer question 3" );
+              valid = false;
+          } else {
+              document.getElementById("influence_id").removeAttribute("required")
+          }
+  }
+    </script>
+  </body>
+</html>

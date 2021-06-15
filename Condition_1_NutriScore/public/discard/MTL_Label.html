@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTL Label</title>
+    <style>
+      #mtl-label {
+        display: grid;
+        font-family: Arial, Helvetica, sans-serif;
+        grid-template-columns: 66px 66px 66px 66px 66px;
+        grid-template-rows: auto;
+        grid-gap: 0px;
+      }
+      .mtl-item {
+        width: 65px;
+        height: 85px;
+        border-radius: 1em;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25px 100px;
+        grid-template-areas:
+          "label"
+          "value";
+      }
+      .mtl-item[data-color-code="med"] {
+        background-color: red;
+      }
+      .mtl-text {
+        grid-area: label;
+        justify-self: center;
+      }
+      .mtl-text h2 {
+        font-size: large;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .mtl-info {
+        grid-area: value;
+        justify-self: center;
+        text-align: center;
+        width: 55px;
+        height: 50px;
+        background-color: white;
+      }
+      .mtl-info h3 {
+        margin-top: 2px;
+        margin-bottom: 4px;
+        font-size: small;
+      }
+      .mtl-info h1 {
+        margin-top: 2px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mtl-label">
+      <div class="mtl-item" id="mtl-1" data-color-code="med">
+        <div class="mtl-text">
+          <h2>MED</h2>
+        </div>
+        <div class="mtl-info">
+          <h3>Calories</h3>
+          <h1>352</h1>
+        </div>
+      </div>
+      <div class="mtl-item" id="mtl-2">
+        <div class="mtl-text">
+          <h2>HIGH</h2>
+        </div>
+        <div class="mtl-info">
+          <h3>Sugar</h3>
+          <h1>1.0g</h1>
+        </div>
+      </div>
+      <div class="mtl-item" id="mtl-3">
+        <div class="mtl-text">
+          <h2>MED</h2>
+        </div>
+        <div class="mtl-info">
+          <h3>Fat</h3>
+          <h1>1.0g</h1>
+        </div>
+      </div>
+      <div class="mtl-item" id="mtl-4">
+        <div class="mtl-text">
+          <h2>MED</h2>
+        </div>
+        <div class="mtl-info">
+          <h3>Sat Fat</h3>
+          <h1>1.0g</h1>
+        </div>
+      </div>
+      <div class="mtl-item" id="mtl-5">
+        <div class="mtl-text">
+          <h2>MED</h2>
+        </div>
+        <div class="mtl-info">
+          <h3>Salt</h3>
+          <h1>1.0g</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+<div id="calories"></div>
+        <div id="sugar"></div>
+        <div id="fat"></div>
+        <div id="sat_fat"></div>
+        <div id="salt"></div>
+    -->

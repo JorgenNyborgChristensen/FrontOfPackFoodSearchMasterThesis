@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FoodRecExp</title>
+    <meta name="description" content="Core HTML Project" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- External CSS -->
+    <link
+      rel="stylesheet"
+      href="./landing_page_files/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts -->
+    <link href="./landing_page_files/css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./landing_page_files/style.min.css" />
+    <link rel="stylesheet" href="./landing_page_files/font-awesome.css" />
+
+    <!-- External JS -->
+    <script
+      src="./landing_page_files/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+  
+    </script>
+    <script
+      src="./landing_page_files/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./landing_page_files/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    data-spy="scroll"
+    data-target="#navbar-nav-header"
+    class="single-layout"
+  >
+    <div class="boxed-page">
+      <div class="container head">
+        <div class="row">
+          <div class="col-lg-3 logo">
+            <img
+              src="./landing_page_files/icon.png"
+              class="d-inline-block align-top"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-9 title">
+            <h1 style="color: #f15e75">Recipe search study</h1>
+          </div>
+        </div>
+      </div>
+      <section id="gtco-single-content" class="bg-white">
+        <div class="container">
+          <div class="section-content blog-content">
+            <!-- Section Title -->
+            <div class="title-wrap">
+              <h2 class="section-title">Hello,</h2>
+              <p class="section-sub-title">
+                In this experiment you will be asked to search for three
+                different recipes using different predefined keywords.
+                <br />Each search will result in a total of 20 recipes, you will
+                be asked to choose the recipe that you like the most, and would
+                like to cook at home. In addition, you will be asked to answer a
+                few questions after each recipe you have selected. <br />The
+                whole experiment will take about 6 minutes.
+              </p>
+            </div>
+            <!-- End of Section Title -->
+
+            <div class="row">
+              <div class="col md-1 text-center">
+                <br />
+
+                <!-- <input type="submit" class="btn btn-secondary btn-red" value="Myrror Login" style="font-size: 20px" onclick="location.href='myrrorLogin.html'"/> 
+                                <input type="submit" class="btn btn-secondary btn-red" value="Continue without Myrror" style="font-size: 20px" onclick="location.href='form.html'"/>  -->
+                <input
+                  type="submit"
+                  class="btn btn-secondary btn-red"
+                  value="Continue to the Survey"
+                  style="font-size: 20px"
+                  onclick="location.href='demographics_survey.html'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="mastfoot mb-3 bg-white py-4 border-top">
+        <div class="inner container">
+          <div class="row">
+            <div class="col-md-6 d-flex">
+
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- External JS -->
+    <script
+      src="./landing_page_files/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./landing_page_files/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./landing_page_files/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Main JS -->
+    <script>
+        // Generate variant order
+        function getVariantOrder() {
+          var array = ["variant_1.html", "variant_2.html", "variant_3.html"];
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+          array.push("end_survey.html");
+          return array;
+        }
+        sessionStorage.setItem("variantOrder", JSON.stringify(getVariantOrder()));
+  
+        // Generate queryterm order
+        function getQueryTermOrder() {
+          var array = ["Chicken", "Salad", "Pasta"];
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+          return array;
+        }
+        sessionStorage.setItem(
+          "queryTermsOrder",
+          JSON.stringify(getQueryTermOrder())
+        );
+      </script>
+  </body>
+</html>

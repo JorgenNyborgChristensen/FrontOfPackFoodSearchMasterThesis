@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EC1VVG8619"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EC1VVG8619");
+    </script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://unpkg.com/survey-jquery@1.8.23/modern.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+
+    <title>Questionnaire</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header id="choice-survey-header">
+        <h1>Recipe Search Study</h1>
+      </header>
+      <div class="form-container">
+        <form
+          id="choice-survey"
+          name="choice-survey"
+          action="https://recipe-search-3.herokuapp.com/selectrecipe"
+          method="POST"
+        >
+          <input type="hidden" id="variant" name="variant" value="2" />
+          <input type="hidden" id="user_id" name="user_id" value="" />
+          <input type="hidden" id="redirect" name="redirect" value="" />
+          <input
+            type="hidden"
+            id="queryTermForm"
+            name="queryTermForm"
+            value=""
+          />
+          <input type="hidden" id="order" name="order" value="" />
+          <input type="hidden" id="condition" name="condition" value="3" />
+          <input type="hidden" id="submitted_at" name="submitted_at" value="" />
+          <input type="hidden" id="choice" name="choice" value="" />
+          <input type="hidden" id="loadMore" name="loadMore" value="" />
+          <input type="hidden" id="choice_num" name="choice_num" value="2" />
+
+          <h3 class="sv-title">Recipe choice questionnaire</h3>
+          <p>
+            The propositions below are about the recipe you have just chosen.
+            Please indicate to what extent you agree with each proposition:
+          </p>
+          <h2 class="q_cat">Choice satisfaction:</h2>
+          <label class="statement" id="statement_top"
+            >1. I would recommend the chosen recipe to others</label
+          >
+          <ul class="likert">
+            <li>
+              <input type="radio" name="choice_sat_q1" value="-2" required />
+              <label>Strongly disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q1" value="-1" />
+              <label>Disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q1" value="0" />
+              <label>Neither disagree/agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q1" value="1" />
+              <label>Agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q1" value="2" />
+              <label>Strongly agree</label>
+            </li>
+          </ul>
+          <label class="statement"
+            >2. My chosen recipe could become one of my favorites</label
+          >
+          <ul class="likert">
+            <li>
+              <input type="radio" name="choice_sat_q3" value="-2" required />
+              <label>Strongly disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q3" value="-1" />
+              <label>Disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q3" value="0" />
+              <label>Neither disagree/agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q3" value="1" />
+              <label>Agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q3" value="2" />
+              <label>Strongly agree</label>
+            </li>
+          </ul>
+          <label class="statement"
+            >3. I think I would enjoy eating the chosen recipe</label
+          >
+          <ul class="likert">
+            <li>
+              <input type="radio" name="choice_sat_q4" value="-2" required />
+              <label>Strongly disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q4" value="-1" />
+              <label>Disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q4" value="0" />
+              <label>Neither disagree/agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q4" value="1" />
+              <label>Agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q4" value="2" />
+              <label>Strongly agree</label>
+            </li>
+          </ul>
+
+          <!-- Difficulty questions:-->
+          <h2 class="q_cat">Choice difficulty:</h2>
+
+          <label class="statement" id="statement_top"
+            >4. I changed my mind several times before making a decision</label
+          >
+          <ul class="likert">
+            <li>
+              <input type="radio" name="choice_sat_q2" value="-2" required />
+              <label>Strongly disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q2" value="-1" />
+              <label>Disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q2" value="0" />
+              <label>Neither disagree/agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q2" value="1" />
+              <label>Agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q2" value="2" />
+              <label>Strongly agree</label>
+            </li>
+          </ul>
+
+          <label class="statement">5. It was easy to make this choice</label>
+          <ul class="likert">
+            <li>
+              <input type="radio" name="choice_sat_q5" value="-2" required />
+              <label>Strongly disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q5" value="-1" />
+              <label>Disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q5" value="0" />
+              <label>Neither disagree/agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q5" value="1" />
+              <label>Agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q5" value="2" />
+              <label>Strongly agree</label>
+            </li>
+          </ul>
+          <label class="statement">6. Making a choice was overwhelming</label>
+          <ul class="likert">
+            <li>
+              <input type="radio" name="choice_sat_q6" value="-2" required />
+              <label>Strongly disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q6" value="-1" />
+              <label>Disagree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q6" value="0" />
+              <label>Neither disagree/agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q6" value="1" />
+              <label>Agree</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q6" value="2" />
+              <label>Strongly agree</label>
+            </li>
+          </ul>
+
+          <label class="statement">7. Two plus two is </label>
+          <ul class="likert">
+            <li>
+              <input type="radio" name="choice_sat_q7" value="1" required />
+              <label>1</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q7" value="2" />
+              <label>2</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q7" value="3" />
+              <label>3</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q7" value="4" />
+              <label>4</label>
+            </li>
+            <li>
+              <input type="radio" name="choice_sat_q7" value="5" />
+              <label>5</label>
+            </li>
+          </ul>
+
+          <div class="buttons">
+            <button class="sv-btn confirm-choice-survey">Confirm</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      sessionStorage.setItem("choice_num", 3);
+
+      // Set values from session storage
+      document.getElementById("user_id").value = sessionStorage.getItem(
+        "user_id"
+      );
+
+      // Redirect to variant X from random variant order
+      var redirect = document.getElementById("redirect");
+      var variantOrder = JSON.parse(sessionStorage.getItem("variantOrder"));
+      const redirect1 = variantOrder[2].toString();
+      redirect.value = redirect1;
+
+      // Get time now
+      var time = document.getElementById("submitted_at");
+      var now = new Date();
+      var timeNow = now.toISOString();
+      time.value = timeNow;
+
+      // Set chosen recipe in choice_survey
+      document.getElementById("choice").value = sessionStorage.getItem(
+        "choice"
+      );
+
+      // Get query term used
+      // Get query term used
+      var qo = JSON.parse(sessionStorage.getItem("queryTermsOrder"));
+      const term = qo[1].toString();
+      document.getElementById("queryTermForm").value = term;
+
+      // Get recipe order
+      document.getElementById("order").value = sessionStorage.getItem("order");
+
+      // Check if user used pagination to load more recipes
+      document.getElementById("loadMore").value = sessionStorage.getItem(
+        "loadMore"
+      );
+    </script>
+  </body>
+</html>

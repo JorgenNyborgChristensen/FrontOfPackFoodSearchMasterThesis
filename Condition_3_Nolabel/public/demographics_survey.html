@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EC1VVG8619"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EC1VVG8619');
+</script> 
+  <link rel="stylesheet" href="style/content-style.css" />
+
+
+  <!-- Your platform (jquery) scripts. -->
+
+  <link href="https://unpkg.com/survey-jquery@1.8.23/modern.css" type="text/css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/survey-jquery@1.8.23/survey.jquery.min.js"></script>
+
+  <title>Questionnaire</title>
+</head>
+
+<body>
+  <div id="main-survey">
+    <header id="main-survey-header">
+      <h1>Recipe Search Study</h1>
+    </header>
+    <div id="main-survey-content">
+      <div id="main-survey-text">
+        <p>
+          Before searching for recipes, we would first like to ask you a few questions about your background and your food preferences. Press 'Confirm' to continue.
+
+        </p>
+      </div>
+
+      <div id="surveyContainer">
+        <FORM id="demographics-form" name="demographics-form" action="https://recipe-search-3.herokuapp.com/demographicssurvey"  onsubmit="return validateForm()" method="POST">
+
+
+          <!-- Values set by script user_id -->
+          <input type=hidden id="user_id" name="user_id" value="">
+          <input type=hidden id="time" name="time" value="">
+          <input type=hidden id="condnum" name="condnum" value="3">
+          <input type=hidden id="redirect" name="redirect" value="">
+
+          <div class="sv-container">
+            <!--
+            <div class="sv-question">
+              <label class="sv-title"><b>1. What is your Prolific ID? *</b></label>
+              <input class="sv-input" name="prolific" type="text" required></p>
+              <p>
+            </div>
+            -->
+            <div class="sv-question">
+              <label class="sv-title"><b>1. What is your age? *</b></label>
+              <input class="sv-input" name="age" type="number" required></p>
+              <p>
+            </div>
+
+            <div class="sv-question">
+              <label class="sv-title"><b>2. What is your highest completed education? *</b></label>
+              <select class="sv-input" name="education" required>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Less than high school
+                <option value="2">High school or equivalent</option>
+                <option value="3">Bachelor degree (e.g. BA, BSc)</option>
+                <option value="4">Master degree (e.g. MA, MSc)</option>
+                <option value="5">Doctorate (e.g. PhD)</option>
+                <option value="6">Prefer not to say</option>
+              </select> </p>
+              <p>
+            </div>
+
+            <div class="sv-question">
+              <p><label class="sv-title"><b>3. What is your nationality? *</b></label>
+                <input class="sv-input" name="nationality" type="text" required></p>
+              <div class="sv-question">
+              </div>
+              <label class="sv-title"><b>4. What is your gender? *</b></label></p>
+              <input class="w3-radio" type="radio" name="gender" value="male" required>
+              <label>Male &nbsp;&nbsp;&nbsp;</label>
+              <input class="w3-radio" type="radio" name="gender" value="female">
+              <label>Female &nbsp;&nbsp;&nbsp; </label>
+              <input class="w3-radio" type="radio" name="gender" value="other">
+              <label>Other </label>
+            </div>
+
+            <div class="sv-question">
+              <label class="sv-title"><b>5. Do you have any dietary restrictions? *</b></label>
+              <p><input class="w3-check" id="restriction_id" type="checkbox" name="vegan" value="vegan" required>
+                <label>Vegetarian</label></p>
+              <p><input class="w3-check" type="checkbox" name="diabetes" value="diabetes">
+                <label>Diabetes</label></p>
+              <p><input class="w3-check" type="checkbox" name="kosher" value="kosher">
+                <label>Kosher</label></p>
+              <p><input class="w3-check" type="checkbox" name="lactose" value="lactose">
+                <label>Lactose intolerance</label></p>
+              <p><input class="w3-check" type="checkbox" name="halal" value="halal">
+                <label>Halal</label></p>
+              <p><input class="w3-check" type="checkbox" name="gluten" value="gluten">
+                <label>Gluten free</label></p>
+                <p><input class="w3-check" type="checkbox" name="pescatarian" value="pescatarian">
+                  <label>Pescatarian</label></p>
+                  <p><input class="w3-check" type="checkbox" name="allergies" value="allergies">
+                    <label>Allergies</label></p>
+              <p><input class="w3-check" type="checkbox" name="no_restriction" value="none">
+                <label>No dietary restrictions</label></p>
+              <label class="w3-text-black">Other, if any: </label>
+              <input class="sv-input" name="other_restriction" type="text"></p>
+            </div>
+
+            <div class="sv-question">
+              <label class="sv-title"><b>6. Do you have any dietary goals? *</b></label>
+              <p><input class="w3-check" id="goal_id" type="checkbox" name="protein" value="protein" required>
+                <label>Eat more protein</label></p>
+
+              <p><input class="w3-check"  type="checkbox" name="salt" value="salt">
+                <label>Eat less salt</label></p>
+
+              <p><input class="w3-check"  type="checkbox" name="fruit" value="fruit">
+                <label>Eat more fruit</label></p>
+
+              <p><input class="w3-check"  type="checkbox" name="vegetables" value="vegetables">
+                  <label>Eat more vegetables</label></p>
+
+              <p><input class="w3-check"  type="checkbox" name="lweight" value="lweight">
+                <label>Lose weight</label></p>
+
+              <p><input class="w3-check"type="checkbox" name="gweight" value="gweight">
+                <label>Gain weight</label></p>
+
+              <p><input class="w3-check"  type="checkbox" name="nogoal" value="none">
+              <label>No goals</label></p>
+
+              <label class="w3-text-black">Other, if any: </label>
+              <input class="sv-input"  name="other_goal" type="text"></p>
+            </div>
+            
+            <div class="sv-question">
+              <p> <label class="sv-title"><b>7. I consider my cooking experience to be: *</b></label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="cooking" value="cverylow" required>
+                <label>Very low</label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="cooking" value="clow">
+                <label>Low</label></p>
+              <input class="w3-radio" type="radio" name="cooking" value="cmedium">
+              <label>Medium </label></p>
+              <input class="w3-radio" type="radio" name="cooking" value="chigh">
+              <label>High </label></p>
+              <input class="w3-radio" type="radio" name="cooking" value="cveryhigh">
+              <label>Very high</label></p>
+            </div>
+
+            <div class="sv-question">
+              <p> <label class="sv-title"><b>8. I consider my eating habits to be: *</b></label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="vunhealthy" required>
+                <label>Very unhealthy</label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="unhealthy">
+                <label>Unhealthy</label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="neutral">
+                <label>Neither healthy nor unhealthy </label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="healthy">
+                <label>Healthy </label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="vhealhty">
+                <label>Very healthy</label></p>
+            </div>
+          </div>
+
+          <div class="sv-button">
+            <button class="sv-btn confirm-demographic-survey" onclick="validateForm()">Confirm</button>
+          </div>
+
+        </FORM>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+  <script>
+    // Unique ID
+    function uniqueID() {
+      return Math.floor(Math.random() * Date.now())
+    }
+
+    var sub = document.getElementById("user_id");
+    var uuid = uniqueID()
+    sub.value = uuid
+    sessionStorage.setItem("user_id", uuid)
+
+    // Get time now
+    var time = document.getElementById("time");
+    var now = new Date();
+    var timeNow = now.toISOString();
+    time.value = timeNow;
+
+    // Redirect to variant X from random variant order
+    var redirect = document.getElementById("redirect");
+    var variantOrder = JSON.parse(sessionStorage.getItem("variantOrder"));
+    const redirect1 = variantOrder[0].toString();
+    redirect.value = redirect1;  
+
+    function submitForm(){
+
+    // Get time now
+    var time = document.getElementById("time");
+    var now = new Date();
+    var timeNow = now.toISOString();
+    time.value = timeNow;
+
+    // USER ID 
+    var sub = document.getElementById("user_id");
+    var uuid = uniqueID()
+    sub.value = uuid
+    sessionStorage.setItem("user_id", uuid)
+
+    document.getElementById('demographics-form').submit();
+}      
+
+sessionStorage.setItem("choice_num", 1);
+
+function validateForm() {
+  var valid = true;
+  
+  /*if (document["demographics-form"].prolific.value == "" )
+  {
+    alert ( "Please fill in your Prolific ID" );
+    valid = false;
+  }*/
+  if (document["demographics-form"].age.value == "" )
+  {
+    alert ( "Please fill in your Age" );
+    valid = false;
+  }
+  if (document["demographics-form"].education.selectedIndex == 0 )
+    {
+        alert ( "Please select your Education" );
+        valid = false;
+    }
+    if (document["demographics-form"].nationality.value == "" )
+  {
+    alert ( "Please fill in your Nationality" );
+    valid = false;
+  }
+  if ((document["demographics-form"].gender[0].checked == false) 
+    && (document["demographics-form"].gender[1].checked == false ) && (document["demographics-form"].gender[2].checked == false ))
+    {
+        alert ( "Please choose your Gender" );
+        valid = false;
+    }
+
+    if (( document["demographics-form"].vegan.checked == false )  && ( document["demographics-form"].diabetes.checked == false )  &&( document["demographics-form"].kosher.checked == false )  &&( document["demographics-form"].lactose.checked == false )  &&( document["demographics-form"].halal.checked == false )  &&( document["demographics-form"].gluten.checked == false ) && (document["demographics-form"].pescatarian.checked == false ) &&   (document["demographics-form"].allergies.checked == false )  && (document["demographics-form"].no_restriction.checked == false ) && ( document["demographics-form"].other_restriction.value === ""))
+    {
+        alert ( "6. Do you have any dietary restrictions?" );
+        valid = false;
+    } else {
+      document.getElementById("restriction_id").removeAttribute("required")
+    }
+
+    if (( document["demographics-form"].protein.checked == false )  && ( document["demographics-form"].salt.checked == false )  &&( document["demographics-form"].fruit.checked == false )  &&( document["demographics-form"].vegetables.checked == false )  &&( document["demographics-form"].lweight.checked == false )  &&( document["demographics-form"].gweight.checked == false )  && ( document["demographics-form"].nogoal.checked == false ) && ( document["demographics-form"].other_goal.value === ""))
+    {
+        alert ( "7. Do you have any dietary goals?" );
+        valid = false;
+    } else {
+      document.getElementById("goal_id").removeAttribute("required")
+    }
+    if ((document["demographics-form"].cooking[0].checked == false) && (document["demographics-form"].cooking[1].checked == false) && (document["demographics-form"].cooking[2].checked == false) && (document["demographics-form"].cooking[3].checked == false) && (document["demographics-form"].cooking[4].checked == false))
+    {
+        alert ( "8. I consider my cooking experience to be:" );
+        valid = false;
+    }
+
+    if ((document["demographics-form"].health[0].checked == false) && (document["demographics-form"].health[1].checked == false) && (document["demographics-form"].health[2].checked == false) && (document["demographics-form"].health[3].checked == false) && (document["demographics-form"].health[4].checked == false))
+    {
+        alert ( "9. I consider my eating habits to be:" );
+        valid = false;
+    }
+  if (valid === true) {
+      document.getElementById('demographics-form').submit();
+    }
+}
+    
+  </script>
+</body>
+
+</html>

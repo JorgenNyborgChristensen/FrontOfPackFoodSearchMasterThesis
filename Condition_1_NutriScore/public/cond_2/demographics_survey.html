@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../style/content-style.css" />
+
+
+  <!-- Your platform (jquery) scripts. -->
+
+  <link href="https://unpkg.com/survey-jquery@1.8.23/modern.css" type="text/css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/survey-jquery@1.8.23/survey.jquery.min.js"></script>
+
+  <title>Questionnaire</title>
+</head>
+
+<body>
+  <div id="main-survey">
+    <header id="main-survey-header">
+      <h1>Recipe Search Study</h1>
+    </header>
+    <div id="main-survey-content">
+      <div id="main-survey-text">
+        <h1>Please answer the following questions</h1>
+        <p>
+          Before searching for recipes, we would first like to ask you a few
+          questions about your background and your food preferences. Press
+          'Complete' to continue.
+        </p>
+      </div>
+      <div id="surveyContainer">
+        <FORM id="demographics-form" name="demographics-form" action="https://recipe-search-1.herokuapp.com/demographicssurvey" method="POST">
+
+
+          <!-- Values set by script user_id -->
+          <input type=hidden id="user_id" name="user_id" value="">
+          <input type=hidden id="time" name="time" value="">
+          <input type=hidden id="condnum" name="condnum" value="1">
+
+          <div class="sv-container">
+
+            <div class="sv-question">
+              <label class="sv-title"><b>1. What is your Prolific ID? *</b></label>
+              <input class="sv-input" name="prolific" type="text" required></p>
+              <p>
+            </div>
+
+            <div class="sv-question">
+              <label class="sv-title"><b>2. What is your age? *</b></label>
+              <input class="sv-input" name="age" type="text" required></p>
+              <p>
+            </div>
+
+            <div class="sv-question">
+              <label class="sv-title"><b>3. What is your highest completed education? *</b></label>
+              <select class="sv-input" name="education" required>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Less than high school
+                <option value="2">High school or equivalent</option>
+                <option value="3">Bachelor degree (e.g. BA, BSc)</option>
+                <option value="4">Master degree (e.g. MA, MSc)</option>
+                <option value="5">Doctorate (e.g. PhD)</option>
+                <option value="6">Prefer not to say</option>
+              </select> </p>
+              <p>
+            </div>
+
+            <div class="sv-question">
+
+              <label class="sv-title"><b>4. Do you have any dietary restrictions? *</b></label>
+              <p><input class="w3-check" type="checkbox" name="vegan" value="vegan">
+                <label>Vegan/Vegetarian</label></p>
+              <p><input class="w3-check" type="checkbox" name="diabetes" value="diabetes">
+                <label>Diabetes</label></p>
+              <p><input class="w3-check" type="checkbox" name="kosher" value="kosher">
+                <label>Kosher</label></p>
+              <p><input class="w3-check" type="checkbox" name="lactose" value="lactose">
+                <label>Lactose intolerance</label></p>
+              <p><input class="w3-check" type="checkbox" name="halal" value="halal">
+                <label>Halal</label></p>
+              <p><input class="w3-check" type="checkbox" name="gluten" value="gluten">
+                <label>Gluten free</label></p>
+              <p><input class="w3-check" type="checkbox" name="norestriction" value="none">
+                  <label>No dietary restrictions</label></p>
+              <label class="w3-text-black">Other, if any: </label>
+              <input class="sv-input" name="other_restriction" type="text"></p>
+            </div>
+
+            <div class="sv-question">
+              <p><label class="sv-title"><b>5. What is your nationality? *</b></label>
+                <input class="sv-input  " name="nationality" type="text" required></p>
+              <div class="sv-question">
+              </div>
+              <label class="sv-title"><b>6. What is your gender? *</b></label></p>
+              <input class="w3-radio" type="radio" name="gender" value="male" required>
+              <label>Male &nbsp;&nbsp;&nbsp;</label>
+              <input class="w3-radio" type="radio" name="gender" value="female">
+              <label>Female &nbsp;&nbsp;&nbsp; </label>
+              <input class="w3-radio" type="radio" name="gender" value="other">
+              <label>Other </label>
+            </div>
+
+            <div class="sv-question">
+              <p> <label class="sv-title"><b>7. I consider my cooking experience to be: *</b></label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="cooking" value="cverylow" required>
+                <label>Very low</label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="cooking" value="clow">
+                <label>Low</label></p>
+              <input class="w3-radio" type="radio" name="cooking" value="cmedium">
+              <label>Medium </label></p>
+              <input class="w3-radio" type="radio" name="cooking" value="chigh">
+              <label>High </label></p>
+              <input class="w3-radio" type="radio" name="cooking" value="cveryhigh">
+              <label>Very high</label></p>
+            </div>
+
+            <div class="sv-question">
+              <p> <label class="sv-title"><b>8. I consider my eating habits to be: *</b></label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="vunhealthy" required>
+                <label>Very unhealthy</label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="unhealthy">
+                <label>Unhealthy</label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="neutral">
+                <label>Neither healthy nor unhealthy </label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="healthy">
+                <label>Healthy </label></p>
+              <p>
+                <input class="w3-radio" type="radio" name="health" value="vhealhty">
+                <label>Very healthy</label></p>
+            </div>
+
+            <div class="sv-question">
+              <label class="sv-title"><b>9. Do you have any dietary goals? *</b></label>
+              <select class="sv-input" name="goal" required>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="loseweight">Lose weight</option>
+                <option value="gainweight">Gain weight</option>
+                <option value="eathealthier">Eat healthier</option>
+                <option value="nogoal">No goal</option>
+              </select> </p>
+              <p>
+            </div>
+
+          </div>
+
+
+
+          <div class="sv-button">
+            <button class="sv-btn confirm-demographic-survey" onclick="submitForm()">Confirm</button>
+          </div>
+
+        </FORM>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+  <script>
+    // Unique ID
+    function uniqueID() {
+      return Math.floor(Math.random() * Date.now())
+    }
+
+    
+    var sub = document.getElementById("user_id");
+    var uuid = uniqueID()
+    sub.value = uuid
+    sessionStorage.setItem("user_id", uuid)
+
+    // Get time now
+    var time = document.getElementById("time");
+    var now = new Date();
+    var timeNow = now.toISOString();
+    time.value = timeNow;
+
+    // Generate queryterm order
+    function getQueryTermOrder() {
+      var array = ["Chicken", "Salad", "Chicken"];
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function submitForm(){
+      sessionStorage.setItem("queryTermsOrder", JSON.stringify(getQueryTermOrder()));
+
+      // Get time now
+    var time = document.getElementById("time");
+    var now = new Date();
+    var timeNow = now.toISOString();
+    time.value = timeNow;
+
+    // USER ID 
+    var sub = document.getElementById("user_id");
+    var uuid = uniqueID()
+    sub.value = uuid
+    sessionStorage.setItem("user_id", uuid)
+
+        document.getElementById('demographics-form').submit();
+        location.href='variant_1.html';
+}       
+    
+  </script>
+</body>
+
+</html>

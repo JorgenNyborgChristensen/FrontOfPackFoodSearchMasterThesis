@@ -1,0 +1,363 @@
+html {
+  background-color: #f1f1f1;
+}
+#wrap {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+#choice-survey-header h1 {
+  font-weight: 400;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.green_button {
+  border-radius: 12px;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.search_bar {
+  grid-area: header;
+  justify-self: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  padding-bottom: 50px;
+}
+
+.task_description {
+  font-family: Arial, Helvetica, sans-serif;
+  grid-column: 1/3;
+  grid-row: 1;
+  justify-self: center;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 10px;
+  margin-top: 15px;
+}
+.task_description h1 {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+}
+.search {
+  grid-column: 1/3;
+  grid-row: 2;
+  width: 100%;
+}
+
+.search input {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+}
+#searchKeyword {
+  width: 80%;
+}
+
+#search {
+  width: 100%;
+}
+
+#searchKeyword:focus {
+  outline: none !important;
+  border: 1px solid #66afe9;
+}
+
+#searchButton {
+  width: 14%;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  background-color: white;
+  border: 0.1px solid rgb(118);
+  border-radius: 2px;
+}
+
+#searchButton:hover {
+  background-color: #f1f1f1;
+}
+
+.container {
+  background-color: #f1f1f1;
+  min-height: 100%;
+  grid-template-columns: 100%;
+  display: grid;
+  grid-template-columns: auto 40% auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: ". header ." ". main  ." ". footer . ";
+  grid-gap: 10px;
+}
+
+#recipe_list {
+  grid-area: main;
+  justify-self: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.recipe_card {
+  width: 600px;
+  height: 250px;
+  border: 1px solid black;
+}
+
+footer {
+  grid-area: footer;
+  justify-self: center;
+  display: grid;
+  column-gap: 20px;
+}
+
+.more_recipes_button {
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 12px;
+  background-color: grey; /* Grey */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
+}
+
+#next_button {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#backButton {
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.thanks-container {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    min-height: 100%;
+    grid-template-columns: 100%;
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: ". header ." ". main  ." ". footer . ";
+    grid-gap: 10px;
+  }
+  .search input {
+    margin-left: 1px;
+  }
+}
+
+.search_bar {
+  padding-bottom: 0px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrap {
+  font: 12px Arial, san-serif;
+}
+.sv-title {
+  margin: 20px 0 0;
+}
+
+.form-container {
+  display: block;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 100%;
+}
+
+form .statement {
+  display: block;
+  font-weight: bold;
+  padding: 30px 0 0 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 1.1em;
+}
+
+.q_cat {
+  border-bottom: 2px solid #dee1d7;
+}
+
+#statement_top {
+  padding-top: 5px;
+}
+form .likert {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 15px 0 10px;
+  display: block;
+  border-bottom: 2px solid #efefef;
+  background-color: #efefef;
+}
+form .likert:last-of-type {
+  border-bottom: 0;
+}
+form .likert:before {
+  content: "";
+  position: relative;
+  top: 11px;
+  left: 10%;
+  display: block;
+  background-color: #cdcbcb;
+  height: 4px;
+  width: 77%;
+}
+form .likert li {
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  vertical-align: top;
+}
+form .likert li input[type="radio"] {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin-left: -6px;
+}
+form .likert li label {
+  width: 100%;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+form .buttons {
+  margin: 30px 0;
+  padding: 0 4.25%;
+  text-align: right;
+}
+
+form .buttons .clear {
+  background-color: #e9e9e9;
+}
+form .buttons .submit {
+  background-color: #67ab49;
+}
+form .buttons .clear:hover {
+  background-color: #ccc;
+}
+form .buttons .submit:hover {
+  background-color: #14892c;
+}
+
+#choice-survey {
+  max-width: 1250px;
+  width: 65%;
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+#end-survey {
+  max-width: 1250px;
+  width: 65%;
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+#end-survey p {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+}
+#choice-survey-header {
+  background-color: #dee1d7 !important;
+  margin: 0px;
+  padding: 1px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#main-survey-header h1 {
+  font-weight: 400;
+}
+
+.sv-btn {
+  background-color: rgb(26, 179, 148);
+  appearance: none;
+  border: none;
+  border-radius: 1.214em;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 0.5em 2.786em 0.6em;
+  text-align: left;
+  font-size: 20px !important;
+}
+.sv-input {
+  outline: none;
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 2.19em;
+  padding: 0.25em 0 0.25em 0.87em;
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.07em solid #d4d4d4;
+  box-shadow: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+/* thanks.html style */
+.thank-you {
+  padding: 10px;
+  width: 600px;
+  height: 250px;
+  background: white;
+  text-align: center;
+}
+
+.thank-you p {
+  margin-bottom: 30px;
+}
