@@ -1,0 +1,245 @@
+,Unnamed: 0,user_id,condnum,iso_time,prolific_id,gender,age,nationality,education,experience,eating_habits,goal,restrictions,american,european,other_continent
+0,1,785821174684,2,2021-03-13T14:50:08.095Z,5c1d350915a94b00018d676d,male,26,Estonian,2,cmedium,unhealthy,gweight,none,0,European,0
+1,2,944299431357,2,2021-03-13T15:49:26.601Z,5f5d2e274cddcc56953ae1ba,male,26,Mexican,2,cmedium,neutral,none,none,0,0,Other
+2,3,166219211920,2,2021-03-13T14:50:01.654Z,5f3e48bfc67afe0164d3a01c,male,18,Polish,2,cmedium,unhealthy,lweight,none,0,European,0
+3,4,121630343567,2,2021-03-13T14:49:43.649Z,5f4ed7f3e9e8ac127c95538a,male,23,Portuguese,4,cmedium,healthy,gweight,none,0,European,0
+4,5,1420042028051,2,2021-03-13T14:51:17.124Z,5ea6df209d688606829ac644,male,20,Greek,2,clow,neutral,gweight,none,0,European,0
+5,6,276106780979,2,2021-03-13T14:51:15.478Z,5e94decd66dc680ca9a5e7e8,female,37,French,4,clow,neutral,"fruit,vegetables,lweight",none,0,European,0
+6,7,69336885642,2,2021-03-13T14:51:08.624Z,5dea61dd63c57917e8e02197,male,23,Egypt,3,cmedium,unhealthy,none,none,0,0,Other
+7,8,667385776417,2,2021-03-13T14:51:30.115Z,596cd4e524f9f800012ad1c3,male,27,Italian,3,clow,neutral,"salt,lweight",none,0,European,0
+8,9,640357108540,2,2021-03-13T14:51:35.371Z,5efa0ab395da4b7ee7afe803,male,21,Polish,2,cmedium,unhealthy,"vegetables,gweight","vegan,allergies",0,European,0
+9,10,1296729916711,2,2021-03-13T14:52:31.975Z,5fbe3505a4e9b80ab57d08b0,female,20,Portuguese,2,cmedium,healthy,none,none,0,European,0
+10,11,1118709059216,2,2021-03-13T14:52:52.131Z,5ec4492f675098327a7215d4,female,19,Polish,2,chigh,neutral,"salt,fruit,vegetables,lweight",none,0,European,0
+11,12,1151081485383,2,2021-03-13T14:53:01.186Z,5c477c8d92909000016844e4,male,18,Portuguese,2,cverylow,unhealthy,gweight,none,0,European,0
+12,13,131207765801,2,2021-03-13T14:53:01.912Z,601ab197583778322c07e37d,male,28,Italian,4,cmedium,healthy,Eat less meat,none,0,European,0
+13,14,1137891257780,2,2021-03-13T14:52:45.728Z,5d302ba6900e6c00017f79d8,male,39,Hungarian,4,cmedium,neutral,Eat less fat,none,0,European,0
+14,15,126212388200,2,2021-03-13T14:53:23.181Z,5ec3ffd4450ed70bcfbf2c69,female,26,Irish ,3,cmedium,neutral,"fruit,vegetables,lweight",none,0,European,0
+15,16,210754202664,2,2021-03-13T14:53:42.517Z,5e66db6c403a3e470894743f,male,19,Polish,1,cverylow,unhealthy,"protein,fruit,vegetables,lweight",none,0,European,0
+16,17,1408032386985,2,2021-03-13T14:53:52.050Z,5d24c7fc5574980018d8e1de,female,27,UK,3,clow,unhealthy,salt,none,0,0,Other
+17,18,1214394028326,2,2021-03-13T14:53:47.125Z,5f15db42d62e996fdc5429d8,male,24,Mexican,3,cmedium,healthy,none,lactose,0,0,Other
+18,19,21014254287,2,2021-03-13T14:54:26.273Z,5e175840214d1f066ef051a3,male,31,UK,4,cmedium,neutral,lweight,none,0,0,Other
+19,20,237335019026,2,2021-03-13T14:54:32.729Z,5f40c462ff2ee620d5bc5acd,male,28,Mexican,3,cmedium,healthy,"protein,vegetables,lweight",none,0,0,Other
+20,21,325132882765,2,2021-03-13T14:54:20.734Z,5e8211c3acf2d503662bcaae,male,25,Italian,4,clow,neutral,lweight,none,0,European,0
+21,22,1613553149321,2,2021-03-13T14:54:50.649Z,5f85abb7fb2da303d2334d15,male,20,Polish,2,chigh,healthy,lweight,none,0,European,0
+22,23,1153015779899,2,2021-03-13T14:54:57.457Z,601bcd1833bf995c29cdaabb,male,19,Latvian,2,chigh,healthy,protein,dairy-feww,0,European,0
+23,24,1473977719540,2,2021-03-13T14:54:55.032Z,60419d9d3e22f91a70ff6b27,male,31,Indian,3,cmedium,healthy,"protein,fruit,vegetables",halal,0,0,Other
+24,25,1560542288099,2,2021-03-13T14:53:06.083Z,5fca96fa32c26270d1a4f964,male,19,Polish,2,cmedium,neutral,lweight,none,0,European,0
+25,26,1466165217286,2,2021-03-13T14:55:23.842Z,5ffe040522b0ef44780d0234,male,19,Portuguese,2,clow,unhealthy,lweight,none,0,European,0
+26,27,1441759372988,2,2021-03-13T14:55:33.026Z,5ece606caf51f52132821582,male,48,DK,4,cmedium,healthy,none,none,0,European,0
+27,28,469216853681,2,2021-03-13T14:55:28.173Z,5ea84a37b5135b0898faa677,male,22,portuguese,3,chigh,healthy,"fruit,lweight,Eat less meat",none,0,European,0
+28,29,1561889674861,2,2021-03-13T14:55:29.963Z,6029075da770da7d9e458b84,female,22,UK,2,cmedium,neutral,salt,lactose,0,0,Other
+29,30,762368996145,2,2021-03-13T14:55:19.476Z,5f38e89bd1a0bd4121b49219,male,60,Canadian,2,chigh,unhealthy,salt,none,0,0,Other
+30,31,827258926877,2,2021-03-13T14:56:09.269Z,601f0236771535416e2151e2,female,19,Estonian,2,cmedium,healthy,none,none,0,European,0
+31,32,429636190305,2,2021-03-13T14:55:42.355Z,5f0c3c5b698f5003040cc2e8,female,22,UK,3,clow,healthy,"salt,fruit,vegetables,Eat less meat",none,0,0,Other
+32,33,1217025807379,2,2021-03-13T14:55:25.086Z,5e90cb26d84dd93ed9db1951,male,19,Portuguese,2,cverylow,neutral,"protein,gweight",none,0,European,0
+33,34,99024887300,2,2021-03-13T14:56:03.524Z,5f88903753b24c0437c2bc9c,female,27,Italian,4,clow,healthy,lweight,Cholesterol free diet,0,European,0
+34,35,572901821852,2,2021-03-13T14:55:59.279Z,5fa68c0ce8f6d72c032a3bfa,female,24,Polish,3,clow,neutral,"vegetables,lweight",none,0,European,0
+35,36,682742567047,2,2021-03-13T14:56:24.535Z,603cf392d8a95bb30c076336,female,22,UK,3,chigh,healthy,fruit,lactose,0,0,Other
+36,37,268287191084,2,2021-03-13T14:55:59.381Z,60254506dee01c0432ff5788,female,47,Portuguese,3,cmedium,neutral,"protein,salt,fruit,vegetables",none,0,European,0
+37,38,71218291765,2,2021-03-13T14:56:22.109Z,5c1bb460a05a64000125c522,female,22,Portuguese,3,clow,neutral,lweight,none,0,European,0
+38,39,1379642552788,2,2021-03-13T14:56:32.008Z,5d2c4a5091daf50016f531eb,female,19,Polish,2,cverylow,neutral,lweight,none,0,European,0
+39,40,1344130864786,2,2021-03-13T14:56:33.176Z,6011eda77d69161e9471486f,male,19,portuguese,2,clow,neutral,lweight,none,0,European,0
+40,41,1481671785384,2,2021-03-13T14:55:39.862Z,5c06cc785b32d500012df2df,male,29,Polish,4,cmedium,neutral,"fruit,vegetables",none,0,European,0
+41,42,379098436359,2,2021-03-13T14:56:42.259Z,5eb2d24b49e6af070e6c5fef,female,20,Polish,2,cmedium,unhealthy,"salt,fruit,vegetables",none,0,European,0
+42,43,1435413923196,2,2021-03-13T14:56:21.326Z,6040093e0a7ed41aeb718833,female,18,Portuguesa,2,cmedium,healthy,"vegetables,lweight",none,0,European,0
+43,45,682239697185,2,2021-03-13T14:57:14.916Z,6047a8d3410e81000af2e748,male,24,Polish,2,clow,neutral,"fruit,vegetables,lweight",none,0,European,0
+44,46,941155466199,2,2021-03-13T14:57:36.915Z,5f483afd936e951d89408736,female,25,Canadian,4,clow,neutral,none,none,0,0,Other
+45,47,153294957099,2,2021-03-13T14:57:09.922Z,5fbe6f7b885c56016b1b57f6,male,23,Hungarian,2,cmedium,unhealthy,"protein,vegetables,lweight",none,0,European,0
+46,48,1455493867576,2,2021-03-13T14:57:28.112Z,5e977b9378dd3d0d008652ab,male,23,Portuguese,4,clow,unhealthy,"protein,lweight",none,0,European,0
+47,49,1015680950925,2,2021-03-13T14:57:22.846Z,5fad37c84f68b43ef712d29f,female,18,Italian,1,clow,neutral,none,none,0,European,0
+48,50,174453292298,2,2021-03-13T14:57:49.236Z,600b6fed5bb4991274738e64,male,21,Portuguese,3,clow,neutral,gweight,none,0,European,0
+49,51,70458744175,2,2021-03-13T14:57:43.781Z,5cc88c623ad175001a417ad0,female,39,UK,3,cmedium,neutral,none,none,0,0,Other
+50,52,467056463358,2,2021-03-13T14:57:31.516Z,5e35a3e69fa74954d2f843d6,female,62,Polish,4,cverylow,healthy,"vegetables,lweight",gluten,0,European,0
+51,53,1355609765895,2,2021-03-13T14:57:31.590Z,5f9587006b9a6a3ef31bc3c7,female,53,slovene,5,clow,neutral,"salt,vegetables,lweight",none,0,European,0
+52,54,69050340632,2,2021-03-13T14:57:43.115Z,5f932edbb23c790d7222e4fd,female,21,American,2,cmedium,unhealthy,vegetables,none,American,0,0
+53,55,976735852963,2,2021-03-13T15:00:12.605Z,5fb83a72578cc15341117e02,female,18,portuguese,2,clow,unhealthy,lweight,none,0,European,0
+54,56,825007041359,2,2021-03-13T14:58:09.683Z,5fdfd04b9bf07d83b2e5f780,male,25,Portuguese,2,clow,neutral,none,none,0,European,0
+55,57,1054422607068,2,2021-03-13T14:57:54.193Z,601e9d81606b8d337ab338e4,female,21,Polish,2,cmedium,neutral,none,none,0,European,0
+56,58,25549469722,2,2021-03-13T14:58:16.220Z,5f635a1d2cba5f000b9afc85,male,19,Spanish,2,clow,healthy,gweight,none,0,European,0
+57,59,250419060952,2,2021-03-13T14:58:37.713Z,60305f9f5e466aeb8696f7ae,female,32,UK,3,cmedium,neutral,lweight,none,0,0,Other
+58,60,944154299247,2,2021-03-13T14:58:16.277Z,5ea9655dec2b5304a2aad732,male,24,Swiss,2,cmedium,unhealthy,lweight,none,0,European,0
+59,61,1029820121464,2,2021-03-13T14:58:16.781Z,5cc18c827eda130012e96c3d,female,29,UK,3,cmedium,healthy,lweight,none,0,0,Other
+60,62,259194004044,2,2021-03-13T14:58:20.825Z,5dce9c36f347c11003d4a76b,female,23,italian,3,cmedium,healthy,mantain weight,none,0,European,0
+61,63,212570763516,2,2021-03-13T14:58:52.755Z,5f5282f98bb76c54f2c603a7,male,20,Portuguese,2,clow,unhealthy,lweight,none,0,European,0
+62,64,238041626636,2,2021-03-13T14:58:48.253Z,5f271938dab22f02cdc90584,female,18,Polish,1,clow,vunhealthy,lweight,none,0,European,0
+63,65,253380233521,2,2021-03-13T14:57:46.700Z,5e568f0a2951f60222a100ce,male,19,Czech,2,clow,unhealthy,"salt,lweight",none,0,European,0
+64,66,1194039623402,2,2021-03-13T14:58:30.865Z,602fd6450a10abd641a6b89e,female,22,Portuguese,2,chigh,healthy,vegetables,none,0,European,0
+65,67,508125064776,2,2021-03-13T14:58:47.692Z,603e20dbf57521d7b68bbfe7,female,21,Polish,2,clow,unhealthy,"protein,lweight",vegan,0,European,0
+66,68,664249741701,2,2021-03-13T14:58:45.632Z,5fa5a2d7ae70a50ef22a440b,female,18,Estonian,2,cmedium,unhealthy,none,none,0,European,0
+67,69,419995202353,2,2021-03-13T14:59:19.846Z,5b1123b61e55760001b9cfd9,male,22,norwegian,3,cmedium,neutral,none,none,0,European,0
+68,70,716693777354,2,2021-03-13T14:59:06.173Z,5fa015644fae0a00088d140d,female,24,hungarian,3,cmedium,healthy,lweight,gluten,0,European,0
+69,71,277658784574,2,2021-03-13T14:58:58.963Z,5c5d5eb012433d0001c602d5,female,28,Polish,4,cmedium,healthy,none,vegan,0,European,0
+70,72,514476504578,2,2021-03-13T14:59:09.289Z,5c7bee67a7e5ae001665c210,female,26,American,3,cmedium,healthy,vegetables,none,American,0,0
+71,73,1352898696235,2,2021-03-13T14:59:35.672Z,5f90566a2e9d4a0e3aac3b06,female,29,Greek,3,cmedium,neutral,lweight,none,0,European,0
+72,74,265331820838,2,2021-03-13T14:59:36.793Z,5fe38e70d1cd50852242055a,male,21,Mexican,3,cverylow,healthy,gweight,none,0,0,Other
+73,75,546648628954,2,2021-03-13T14:59:39.855Z,5b2661a57297750001c6ff39,female,23,Hungarian,2,cmedium,neutral,lweight,"gluten,Vegan",0,European,0
+74,76,1295951389258,2,2021-03-13T14:59:44.909Z,5f108e55ad604e35783016ec,female,42,Polish,3,cmedium,neutral,lweight,vegan,0,European,0
+75,77,1107181933467,2,2021-03-13T14:59:44.032Z,5e668f3107e41f04e1ff4a95,female,22,Italian,3,chigh,healthy,vegetables,none,0,European,0
+76,78,143310185898,2,2021-03-13T15:00:12.787Z,5f9c47387ddb900b0b56e89c,male,21,Portuguese,3,cmedium,healthy,"fruit,lweight",vegan,0,European,0
+77,79,613095240147,2,2021-03-13T14:59:27.343Z,5f47fd0a35c09526dd9aea03,female,68,UK,3,cmedium,healthy,"protein,salt,fruit,vegetables",none,0,0,Other
+78,81,375775216156,2,2021-03-13T15:00:03.174Z,5c0e967c1d3b1900010808c5,female,56,Portuguese,4,cmedium,neutral,lweight,none,0,European,0
+79,82,450248801844,2,2021-03-13T15:00:22.522Z,59b6e430d793b400014597e4,male,26,Latvian,2,cmedium,healthy,gweight,none,0,European,0
+80,83,360557045414,2,2021-03-13T15:00:21.301Z,5e6919c9d1e0d41c51c0a182,female,22,Polish,3,cmedium,neutral,vegetables,none,0,European,0
+81,84,763935303044,2,2021-03-13T15:00:17.958Z,5e24c30506121f736cefccc0,female,40,Polish,3,cmedium,neutral,vegetables,none,0,European,0
+82,85,1234303971059,2,2021-03-13T14:59:21.156Z,5d1f571bd87f360001f8a7ce,female,34,Kenyan,3,cmedium,neutral,"salt,vegetables,lweight",none,0,0,Other
+83,86,901608344919,2,2021-03-13T14:59:56.280Z,5f46e1427a43dc0bef8df7d6,male,21,Polish,4,cmedium,unhealthy,lweight,none,0,European,0
+84,87,528592591369,2,2021-03-13T14:59:32.547Z,5f772e1b7b3c3e0a5a1e2152,female,22,israel,2,cmedium,neutral,"vegetables,lweight",none,0,0,Other
+85,88,1055139248224,2,2021-03-13T15:00:42.419Z,5ee5421f445ad50d1a06aa29,male,21,Polish,2,cverylow,neutral,gweight,none,0,European,0
+86,89,608704057044,2,2021-03-13T14:59:36.254Z,5fa15cb2c1fb2a21ffe98366,female,21,Polish,2,cmedium,healthy,vegetables,none,0,European,0
+87,90,1445111337738,2,2021-03-13T15:00:42.574Z,6021653b96e8501176f43aa3,male,18,Polish,2,clow,unhealthy,none,none,0,European,0
+88,91,447290626531,2,2021-03-13T15:00:25.937Z,604749fa3665d91ee875a5bc,other,21,Polish,2,cmedium,neutral,"vegetables,lweight,Eat less sugar",vegan,0,European,0
+89,92,515094634490,2,2021-03-13T15:00:44.398Z,5f4ec827c4909710bd484f3d,female,37,South African,3,cmedium,healthy,lweight,none,0,0,Other
+90,93,914609158215,2,2021-03-13T15:00:45.376Z,5b43bcaab857640001312dd5,male,22,Portuguese,3,cmedium,neutral,"salt,lweight",none,0,European,0
+91,94,110697776361,2,2021-03-13T15:00:43.135Z,5eeb764ea8d6d72f629b8400,male,21,Israel,2,clow,healthy,"protein,gweight",none,0,0,Other
+92,95,1436464777485,2,2021-03-13T15:01:04.553Z,5ecaa2c3ab17890791ab8eae,female,19,Dutch,3,clow,healthy,lweight,none,0,European,0
+93,96,1111623406653,2,2021-03-13T15:00:53.774Z,60228d7832d78a3b73935f72,female,40,UK,4,cmedium,neutral,lweight,none,0,0,Other
+94,97,957597431096,2,2021-03-13T15:00:32.102Z,60245ea8dcc5d6140925e57d,male,25,Spain,4,cmedium,neutral,lweight,none,0,European,0
+95,98,1399233290248,2,2021-03-13T15:00:38.958Z,5f672de82c0f4631857bb4a7,male,19,Polish,2,clow,neutral,"fruit,vegetables,lweight",none,0,European,0
+96,99,689749776450,2,2021-03-13T15:00:53.607Z,5db954a2af32f6000a8fe36c,female,22,Spanish,3,cmedium,neutral,"fruit,vegetables",none,0,European,0
+97,100,1506582547273,2,2021-03-13T15:00:35.073Z,5dfab2bab1f22281272f750d,female,19,Portuguese ,2,chigh,healthy,"protein,fruit,gweight",none,0,European,0
+98,101,1090076249248,2,2021-03-13T15:01:15.701Z,5b9ce9e980ebc0000117f24d,male,22,Polish,3,cverylow,neutral,none,none,0,European,0
+99,102,944206860946,2,2021-03-13T15:00:48.942Z,5eb3ebcd099ed01dba58ea09,female,24,Italian,2,cmedium,vhealhty,none,"lactose,gluten",0,European,0
+100,104,823063639546,2,2021-03-13T15:01:18.347Z,5ef4a6ac1c41190800a075d1,female,23,Polish,2,cmedium,healthy,lweight,"lactose,gluten,allergies",0,European,0
+101,105,79424226719,2,2021-03-13T15:01:13.510Z,5f28919ca2baad1c1359ce9d,female,19,Polish,2,clow,neutral,none,none,0,European,0
+102,106,197785699631,2,2021-03-13T15:00:49.562Z,600313fd4a113e381296a3db,male,22,Chilean,3,cmedium,neutral,lweight,none,0,0,Other
+103,107,211009348415,2,2021-03-13T15:01:16.356Z,5efd9ae7f2b3b61fb38f8dc2,female,19,portuguese,2,cmedium,healthy,"fruit,vegetables,lweight",none,0,European,0
+104,108,1542543136275,2,2021-03-13T15:01:44.569Z,5ecb9846119a5e71dc3496dd,male,36,French,5,cmedium,healthy,none,none,0,European,0
+105,109,945172481747,2,2021-03-13T15:01:26.194Z,5f1c4d9f375a08030da0ac9f,female,48,Mexican,3,chigh,healthy,lweight,none,0,0,Other
+106,110,1133319394815,2,2021-03-13T15:01:36.004Z,5c62fb7c0ee07c00012604f8,male,25,Polish,3,clow,neutral,"fruit,vegetables,lweight",none,0,European,0
+107,111,568568750139,2,2021-03-13T15:01:11.985Z,5ea93b86c348bc0008404350,male,25,French,3,clow,unhealthy,none,none,0,European,0
+108,112,1045644144456,2,2021-03-13T15:01:45.167Z,601574b93eee9a631a2c0ef6,male,20,Spain,3,cmedium,healthy,"protein,fruit,vegetables,gweight",lactose,0,European,0
+109,113,700680039291,2,2021-03-13T15:01:59.309Z,5fca16f09e99f355f89abbec,female,24,Spanish,2,chigh,healthy,none,vegan,0,European,0
+110,114,1416049674860,2,2021-03-13T15:01:18.550Z,5ce5253d06e011001908c5ba,female,37,UK,2,cmedium,neutral,"fruit,vegetables,lweight",none,0,0,Other
+111,115,1008413892305,2,2021-03-13T15:02:09.096Z,5f207bf0027b2836f9301773,male,20,Polish,3,clow,neutral,lweight,none,0,European,0
+112,116,997079746027,2,2021-03-13T15:02:04.697Z,601d922bc0e663137b95ea2f,female,46,Polish,4,clow,neutral,"fruit,vegetables,lweight",none,0,European,0
+113,117,1036329612598,2,2021-03-13T15:01:41.517Z,5faff16fb8f0ad2fb7ca38be,female,43,Bulgarian,3,chigh,healthy,"salt,vegetables,lweight",none,0,European,0
+114,118,1321110173398,2,2021-03-13T15:02:22.364Z,5ea962dcd016d6044045117c,male,27,dutch,2,chigh,healthy,"dont eat much meat,none",none,0,European,0
+115,119,1072993239878,2,2021-03-13T15:05:53.879Z,5e6810e0d1e0d40c36c142fa,male,22,Polish,4,clow,unhealthy,lweight,none,0,European,0
+116,120,657020049480,2,2021-03-13T15:06:20.785Z,5d6ec90d2c0cba000143f47a,male,26,Portuguese,4,clow,neutral,"protein,salt","lactose,gluten",0,European,0
+117,121,1503293706070,2,2021-03-13T15:09:28.010Z,5fa5475db7f92d232bd5a47e,male,21,Polish,2,clow,unhealthy,none,none,0,European,0
+118,122,269982130093,2,2021-03-13T15:10:33.343Z,602691763444df34d0917731,male,18,Portuguese,2,clow,neutral,none,none,0,European,0
+119,123,387637635985,2,2021-03-13T15:16:13.677Z,5b9a7335b3790c0001547cee,female,24,Greek,2,cverylow,neutral,fruit,none,0,European,0
+120,124,87582614576,2,2021-03-13T15:16:52.293Z,5fecdac550a719ea1371dc8c,male,30,Polish,3,clow,healthy,lweight,"vegan,none",0,European,0
+121,125,1218717153751,2,2021-03-13T15:30:23.243Z,5edd10be09cfd09f34a7f00c,male,23,Hungarian,2,clow,healthy,"protein,fruit,vegetables",none,0,European,0
+122,130,525972517256,2,2021-03-20T10:22:10.720Z,,female,59,American,3,cverylow,vunhealthy,"fruit,vegetables,lweight","lactose,gluten,Eat plant based",American,0,0
+123,131,1607265860079,2,2021-03-20T10:23:10.838Z,,female,50,American,2,cmedium,neutral,Eat less sugar,vegan,American,0,0
+124,132,95479332212,2,2021-03-20T10:24:00.722Z,,female,41,American,3,cmedium,healthy,none,vegan,American,0,0
+125,134,876926942528,2,2021-03-20T10:29:39.488Z,,male,48,American,3,cmedium,neutral,lweight,none,American,0,0
+126,136,341019428752,2,2021-03-20T10:32:26.421Z,,female,50,catholic,4,chigh,healthy,"protein,salt,fruit,vegetables,lweight","pescatarian,allergies",0,0,Other
+127,137,871498984229,2,2021-03-20T10:39:17.017Z,,male,41,American,2,clow,neutral,none,none,American,0,0
+128,138,1325371543379,2,2021-03-20T10:40:36.006Z,,male,33,white,3,chigh,vhealhty,protein,none,0,0,Other
+129,139,1186937731419,2,2021-03-20T10:39:57.960Z,,female,55,American,3,clow,vunhealthy,none,none,American,0,0
+130,140,1340747583820,2,2021-03-20T10:41:31.283Z,,female,48,American,3,cmedium,healthy,lweight,none,American,0,0
+131,141,1289330372827,2,2021-03-20T10:44:37.042Z,,female,27,American,3,cmedium,neutral,"protein,vegetables,gweight",none,American,0,0
+132,144,1363570382370,2,2021-03-20T10:56:00.807Z,,female,56,American,3,cmedium,healthy,salt,,American,0,0
+133,146,580282464922,2,2021-03-20T10:57:23.778Z,,male,27,American,3,cmedium,healthy,none,none,American,0,0
+134,147,1037378162125,2,2021-03-20T10:53:42.766Z,,male,41,indian,3,cmedium,neutral,salt,halal,0,0,Other
+135,148,68263565281,2,2021-03-20T11:00:16.447Z,,male,28,American,3,cmedium,neutral,none,none,American,0,0
+136,149,1094566506629,2,2021-03-20T11:01:31.072Z,,male,37,Black,2,cmedium,healthy,"protein,salt,fruit,vegetables,lweight",none,0,0,Other
+137,150,634134984234,2,2021-03-20T11:09:35.558Z,,female,48,American,3,cmedium,healthy,"protein,vegetables",none,American,0,0
+138,151,836608889800,2,2021-03-20T11:10:32.393Z,,female,42,American,3,chigh,healthy,none,none,American,0,0
+139,152,802642191175,2,2021-03-20T11:12:16.804Z,,female,39,Montenegrin ,3,cmedium,neutral,"vegetables,lweight","no pork,none",0,European,0
+140,155,1222366175569,2,2021-03-20T11:19:28.721Z,,female,69,American,2,chigh,healthy,none,low fat,American,0,0
+141,156,33628594936,2,2021-03-20T11:25:00.195Z,,female,51,American,2,chigh,neutral,vegetables,none,American,0,0
+142,157,964614189191,2,2021-03-20T11:29:00.987Z,,male,38,American,4,chigh,healthy,lweight,none,American,0,0
+143,158,1578780357013,2,2021-03-20T11:32:26.006Z,,female,43,American,3,chigh,unhealthy,"salt,fruit,vegetables,lweight",lactose,American,0,0
+144,159,677797377849,2,2021-03-20T11:39:57.252Z,,male,50,American,3,cmedium,neutral,none,none,American,0,0
+145,160,1313727617278,2,2021-03-20T11:45:44.989Z,,female,52,American,3,cmedium,healthy,"fruit,vegetables",none,American,0,0
+146,161,119418965118,2,2021-03-20T11:49:06.250Z,,male,43,American,3,cmedium,healthy,none,none,American,0,0
+147,163,1152287006846,2,2021-03-20T11:51:28.615Z,,male,60,American,3,cmedium,healthy,none,Shell Fish ,American,0,0
+148,164,572852075694,2,2021-03-20T11:51:58.682Z,,female,56,American,4,cmedium,neutral,"vegetables,lweight",none,American,0,0
+149,165,561050143493,2,2021-03-20T11:55:27.045Z,,male,67,American,2,cmedium,healthy,vegetables,vegan,American,0,0
+150,166,1537931739824,2,2021-03-20T11:57:10.747Z,,female,41,American,4,chigh,neutral,lweight,none,American,0,0
+151,167,153963568057,2,2021-03-20T11:59:31.822Z,,male,49,American,4,clow,neutral,none,none,American,0,0
+152,168,103002196186,2,2021-03-20T12:00:00.533Z,,female,46,American,3,cmedium,neutral,"fruit,vegetables,lweight",none,American,0,0
+153,169,682987926469,2,2021-03-20T12:02:04.765Z,,female,49,American,3,cveryhigh,healthy,none,halal,American,0,0
+154,170,1599614405025,2,2021-03-20T12:03:31.915Z,,male,33,American,3,chigh,healthy,lweight,none,American,0,0
+155,171,391546261809,2,2021-03-20T12:05:35.872Z,,female,67,American,3,cmedium,unhealthy,none,none,American,0,0
+156,172,983558210260,2,2021-03-20T12:06:42.662Z,,female,35,American,3,cveryhigh,healthy,lweight,gluten,American,0,0
+157,173,310793532454,2,2021-03-20T12:06:12.733Z,,female,48,American,4,cmedium,neutral,fruit,,American,0,0
+158,174,477181305849,2,2021-03-20T12:17:15.091Z,,male,33,American,4,chigh,healthy,none,none,American,0,0
+159,176,513194556268,2,2021-03-20T12:16:52.459Z,,male,41,American,2,chigh,unhealthy,"protein,fruit,vegetables,lweight",allergy or intolerance to olive oil,American,0,0
+160,178,786295591641,2,2021-03-20T12:21:47.801Z,,male,28,American,3,chigh,healthy,protein,none,American,0,0
+161,179,1222384926147,2,2021-03-20T12:35:49.346Z,,male,37,American,3,cmedium,vhealhty,protein,none,American,0,0
+162,180,1429921776064,2,2021-03-20T12:40:51.136Z,,female,53,American,4,cmedium,healthy,none,none,American,0,0
+163,181,213420532102,2,2021-03-20T12:41:48.372Z,,male,40,American,4,cmedium,healthy,none,none,American,0,0
+164,182,665488157528,2,2021-03-20T12:43:38.420Z,,male,46,American,2,cmedium,neutral,"vegetables,lweight",none,American,0,0
+165,183,1293467911522,2,2021-03-20T12:46:05.216Z,,male,65,American,2,cmedium,vunhealthy,maintain current weight or a litttle less,none,American,0,0
+166,184,140662349163,2,2021-03-20T12:50:24.651Z,,male,38,American,4,clow,neutral,"vegetables,lweight",none,American,0,0
+167,185,573730678796,2,2021-03-20T12:55:53.776Z,,male,67,American,3,cmedium,healthy,lweight,none,American,0,0
+168,186,284249801044,2,2021-03-20T12:59:57.377Z,,male,30,American,3,cmedium,healthy,gweight,none,American,0,0
+169,187,827434855706,2,2021-03-20T13:03:49.085Z,,male,28,American,3,cmedium,healthy,lweight,none,American,0,0
+170,188,277252454169,2,2021-03-20T13:07:52.675Z,,female,38,American,2,cverylow,unhealthy,"fruit,vegetables,lweight",none,American,0,0
+171,189,106003730414,2,2021-03-20T13:09:43.403Z,,male,41,white,4,cverylow,healthy,protein,vegan,0,0,Other
+172,190,1110268875522,2,2021-03-20T13:12:23.560Z,,female,39,irish,2,chigh,healthy,"protein,salt,lweight",pescatarian,0,European,0
+173,191,1084178423280,2,2021-03-20T13:14:18.759Z,,female,65,American,3,chigh,unhealthy,lweight,none,American,0,0
+174,192,770879358389,2,2021-03-20T13:14:43.982Z,,female,60,Asian Indian,3,cmedium,healthy,none,vegan,0,0,Other
+175,193,462034444591,2,2021-03-20T13:20:59.022Z,,male,47,American,3,clow,neutral,none,none,American,0,0
+176,194,1360645188459,2,2021-03-20T13:28:05.114Z,,female,48,American,2,chigh,unhealthy,none,none,American,0,0
+177,195,685968744289,2,2021-03-20T13:30:41.981Z,,male,37,American,3,cveryhigh,healthy,"protein,lweight",none,American,0,0
+178,197,459349165726,2,2021-03-20T15:38:13.201Z,,male,22,American,2,cmedium,neutral,lweight,none,American,0,0
+179,198,1146355379485,2,2021-03-20T15:42:45.388Z,,female,68,American,4,cmedium,healthy,"fruit,vegetables",none,American,0,0
+180,199,380961236747,2,2021-03-20T15:48:10.075Z,,male,29,American,3,cmedium,neutral,"protein,lweight",none,American,0,0
+181,200,807679856131,2,2021-03-20T15:57:12.199Z,,female,69,American,3,chigh,vhealhty,"protein,salt,fruit,vegetables",VEGAN,American,0,0
+182,202,277982315818,2,2021-03-20T16:03:16.430Z,,female,50,American,3,cveryhigh,healthy,none,none,American,0,0
+183,203,316574012096,2,2021-03-20T16:03:05.947Z,,male,39,American,3,cmedium,neutral,"salt,vegetables",none,American,0,0
+184,205,234219233073,2,2021-03-20T16:04:12.058Z,,male,29,American,3,cmedium,healthy,none,none,American,0,0
+185,206,1047322954875,2,2021-03-20T16:04:41.077Z,,male,32,American,4,cverylow,vunhealthy,"protein,salt,lweight","lactose,allergies",American,0,0
+186,207,578725149361,2,2021-03-20T16:05:38.415Z,,male,38,American,2,cmedium,neutral,lweight,none,American,0,0
+187,208,119037694039,2,2021-03-20T16:20:00.247Z,,male,69,American,2,chigh,healthy,lweight,none,American,0,0
+188,209,779726704652,2,2021-03-20T16:24:22.069Z,,male,27,American,4,cmedium,healthy,"protein,fruit,vegetables",vegan,American,0,0
+189,210,1239865681739,2,2021-03-20T16:14:51.600Z,,female,29,American,4,cmedium,healthy,lweight,none,American,0,0
+190,213,713571510591,2,2021-03-20T16:35:03.205Z,,male,57,American,2,cmedium,vhealhty,Intermittent fasting daily,gluten,American,0,0
+191,214,1307972656499,2,2021-03-20T16:35:59.294Z,,male,66,American,4,chigh,neutral,none,none,American,0,0
+192,215,406306430587,2,2021-03-20T16:39:01.911Z,,male,44,American,2,chigh,vhealhty,none,none,American,0,0
+193,216,1381590173386,2,2021-03-20T16:49:09.398Z,,male,70,American,3,chigh,healthy,none,none,American,0,0
+194,217,1117266096015,2,2021-03-20T16:54:14.510Z,,male,54,American,3,cmedium,unhealthy,none,none,American,0,0
+195,218,1226893053068,2,2021-03-20T16:56:20.007Z,,male,41,American,3,cmedium,healthy,lweight,none,American,0,0
+196,220,731800693868,2,2021-03-20T17:08:58.240Z,,female,55,American,6,cmedium,healthy,lweight,none,American,0,0
+197,221,543671455610,2,2021-03-20T17:13:11.425Z,,male,70,American,4,cmedium,vhealhty,"protein,salt,vegetables",none,American,0,0
+198,222,1161772319263,2,2021-03-20T17:17:06.185Z,,male,34,white,2,cmedium,healthy,none,none,0,0,Other
+199,224,1247775436086,2,2021-03-20T17:27:11.630Z,,female,32,American,2,cmedium,unhealthy,lweight,none,American,0,0
+200,227,968100188040,2,2021-03-20T18:20:23.571Z,,female,30,American,3,cveryhigh,neutral,lweight,none,American,0,0
+201,228,93169922048,2,2021-03-20T18:23:32.399Z,,male,46,American,3,cveryhigh,vhealhty,salt,none,American,0,0
+202,229,512396981366,2,2021-03-20T18:27:50.636Z,,female,51,American,3,cmedium,neutral,"fruit,vegetables",none,American,0,0
+203,230,565200903602,2,2021-03-20T18:53:49.175Z,,male,33,American,3,chigh,healthy,lweight,none,American,0,0
+204,232,1570134027908,2,2021-03-20T19:38:18.588Z,,female,29,American,5,clow,unhealthy,none,none,American,0,0
+205,233,1202505567886,2,2021-03-20T19:47:31.276Z,,male,32,American,2,cmedium,neutral,"fruit,vegetables,gweight",none,American,0,0
+206,235,1326487620555,2,2021-03-20T20:11:44.589Z,,female,60,American,3,chigh,healthy,"salt,vegetables,lweight","lactose,gluten",American,0,0
+207,236,448243525259,2,2021-03-20T20:29:19.122Z,,male,37,American,3,cmedium,neutral,"protein,vegetables,lweight",none,American,0,0
+208,237,1495075531701,2,2021-03-20T20:44:25.270Z,,female,31,American,3,cmedium,neutral,lweight,none,American,0,0
+209,238,1279817473705,2,2021-03-20T20:45:30.508Z,,female,66,American,3,clow,healthy,vegetables,none,American,0,0
+210,240,1419706570671,2,2021-03-20T20:57:56.614Z,,male,48,American,3,cverylow,neutral,lweight,none,American,0,0
+211,242,1027288838867,2,2021-03-20T21:09:52.193Z,,male,48,American,2,clow,unhealthy,"fruit,vegetables,lweight",none,American,0,0
+212,243,1479498628780,2,2021-03-20T21:13:28.099Z,,female,25,American,3,clow,neutral,none,none,American,0,0
+213,244,1151248176582,2,2021-03-20T21:16:31.430Z,,female,39,Thai,3,cmedium,healthy,"fruit,vegetables,lweight",none,0,0,Other
+214,245,1258491355793,2,2021-03-20T21:30:26.540Z,,female,45,American,2,chigh,unhealthy,none,none,American,0,0
+215,246,620165914697,2,2021-03-20T21:43:48.847Z,,female,65,American,3,cmedium,vhealhty,"salt,fruit,vegetables,lweight",gluten,American,0,0
+216,247,1012972141883,2,2021-03-20T22:15:52.946Z,,female,45,American,4,chigh,healthy,"salt,eat less sugar",no pork,American,0,0
+217,248,597917654896,2,2021-03-20T22:41:33.187Z,,female,44,American,3,cmedium,neutral,"salt,vegetables,lweight",lactose,American,0,0
+218,249,682006721472,2,2021-03-20T22:42:32.788Z,,female,48,American,4,cmedium,healthy,vegetables,"vegan,gluten",American,0,0
+219,250,961527618189,2,2021-03-20T23:02:02.396Z,,female,38,American,4,clow,healthy,vegetables,none,American,0,0
+220,252,1287727445163,2,2021-03-20T23:22:56.931Z,,male,38,American,4,cmedium,healthy,none,none,American,0,0
+221,253,566633502571,2,2021-03-20T23:23:41.861Z,,female,27,American,3,chigh,healthy,protein,none,American,0,0
+222,254,1085241095445,2,2021-03-20T23:28:49.835Z,,female,31,American,3,cmedium,neutral,"protein,fruit,vegetables,lweight",none,American,0,0
+223,255,321854270179,2,2021-03-20T23:37:08.743Z,,female,37,American,3,chigh,neutral,Eat less meat,none,American,0,0
+224,256,514803021961,2,2021-03-20T23:38:38.193Z,,male,58,American,3,cmedium,vhealhty,"salt,fruit,vegetables,less meat",none,American,0,0
+225,257,468442190744,2,2021-03-20T23:48:10.563Z,,female,36,American,2,chigh,vunhealthy,lweight,,American,0,0
+226,258,358831477957,2,2021-03-21T00:19:49.889Z,,male,63,American,2,chigh,vhealhty,none,vegan,American,0,0
+227,259,1417917742309,2,2021-03-21T00:39:28.442Z,,female,61,American,3,clow,neutral,none,none,American,0,0
+228,260,1080244896915,2,2021-03-21T00:44:24.441Z,,female,37,American,4,clow,unhealthy,"vegetables,lweight",none,American,0,0
+229,261,478602028205,2,2021-03-21T00:46:45.306Z,,male,52,American,3,chigh,neutral,vegetables,none,American,0,0
+230,263,1340949541928,2,2021-03-21T00:49:03.353Z,,female,57,American,4,cmedium,neutral,"salt,vegetables,lweight",none,American,0,0
+231,264,726638464076,2,2021-03-21T01:21:31.579Z,,male,53,American,3,cmedium,neutral,lweight,none,American,0,0
+232,265,480749691263,2,2021-03-21T01:56:57.630Z,,male,66,American,2,cveryhigh,vhealhty,none,none,American,0,0
+233,266,750849447520,2,2021-03-21T02:19:36.024Z,,male,53,American,4,cveryhigh,healthy,"salt,vegetables",none,American,0,0
+234,267,637335106774,2,2021-03-21T02:21:26.324Z,,male,25,American,2,cmedium,healthy,none,none,American,0,0
+235,268,621417532150,2,2021-03-21T02:26:09.657Z,,male,57,American,4,cmedium,healthy,none,vegan,American,0,0
+236,269,1194343286979,2,2021-03-21T02:55:08.315Z,,female,35,American,4,chigh,healthy,none,none,American,0,0
+237,270,773096276921,2,2021-03-21T03:21:39.240Z,,other,25,American,3,cmedium,neutral,"protein,fruit,vegetables,gweight",vegan,American,0,0
+238,271,1425877647143,2,2021-03-21T03:24:12.383Z,,female,58,American,3,cmedium,neutral,lweight,allergies,American,0,0
+239,272,1172741213459,2,2021-03-21T03:25:49.172Z,,female,62,American,4,cmedium,vhealhty,none,none,American,0,0
+240,273,762951959479,2,2021-03-21T03:56:16.067Z,,female,33,American,3,chigh,healthy,"fruit,vegetables,lweight",none,American,0,0
+241,274,1482750913097,2,2021-03-21T04:37:15.651Z,,male,34,American,2,clow,unhealthy,"fruit,vegetables,lweight",none,American,0,0
+242,275,129713116043,2,2021-03-21T04:56:43.278Z,,male,34,American,3,cmedium,healthy,"protein,salt,fruit,vegetables",none,American,0,0
+243,276,1360363830039,2,2021-03-21T05:27:18.772Z,,male,53,American,4,cmedium,neutral,lweight,none,American,0,0
